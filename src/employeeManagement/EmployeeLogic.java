@@ -27,9 +27,10 @@ public class EmployeeLogic {
 		}
 	}
 	
-	String insert = "insert into(emp_id,emp_name,salary,department)values(?,?,?,?)";
+	String insert = "insert into employee(emp_id,emp_name,salary,department)values(?,?,?,?)";
 	public void insertDetails(){
 		try {
+			System.out.println("Enter the Employee size to be inserted :");
 			int n=sc.nextInt();
 			for(int i=1;i<=n;i++) {
 				System.out.println("-----Enter the Employee" +" "+i+" "+"Details");
@@ -49,7 +50,7 @@ public class EmployeeLogic {
 				ps.setString(2,emp_name);
 				ps.setDouble(3, salary);
 				ps.setString(4, department);
-				ps.executeUpdate(insert);
+				ps.executeUpdate();
 				System.out.println("Employee is added!");
 				
 				System.out.println("Employee ID:" +emp_id);
