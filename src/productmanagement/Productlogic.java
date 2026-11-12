@@ -29,6 +29,8 @@ String create="create table productdetails("
 		}
 	}
 	
+	
+	
 String insert="insert into productdetails(productid,productname,productprice,qty,dates)values(?,?,?,?,?)";
 public void inserttable() {
 	System.out.println("-----Add Product Details-----");

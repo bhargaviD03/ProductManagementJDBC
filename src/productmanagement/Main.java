@@ -6,6 +6,7 @@ public class Main {
 	public static void main(String[] args) {
 		Productlogic productlogic = new Productlogic();
 
+		
 int choice=0;
 Scanner sc= new Scanner(System.in);
 
